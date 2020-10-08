@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    int a, i,f;
+    char x;
+    cout<<"Введите действие(!/v)";
+    cin>>x;
+if (x=='!'){
+    cout<<"Введите число";
+    cin >> a;
+    f = 1;
+    for (i = 1; i <= a; i++) {
+	    f = f * i;
+    }
+    cout<<"Факториал вашего числа =" << f;
+}
+if (x=='v'){
+    cout<<"Введите число";
+    double v;
+    cin >> a;
+    v=sqrt(a);
+    cout<< "Корень вашего числа =" << v;
+}
+else{
+    cout<<"Выбранного действия не существует";
+}
+}
+///
